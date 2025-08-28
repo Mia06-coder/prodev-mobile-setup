@@ -1,13 +1,13 @@
 import {
+  Text,
+  View,
+  StyleSheet,
   Image,
   ImageBackground,
   Dimensions,
-  StyleSheet,
-  Text,
   TouchableOpacity,
-  View,
 } from "react-native";
-import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
+import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 
 export default function Index() {
   return (
@@ -22,6 +22,7 @@ export default function Index() {
             <View style={styles.companyLogo}>
               <Image source={require("@/assets/images/Logo.png")} />
             </View>
+
             <View style={styles.textGroup}>
               <Text style={styles.textLarge}>
                 Find your favorite place here
@@ -29,6 +30,7 @@ export default function Index() {
               <Text style={styles.textSmall}>The best prices for over 2 </Text>
               <Text style={styles.textSmall}>million properties worldwide</Text>
             </View>
+
             <View style={{ position: "absolute", bottom: 0, width: "100%" }}>
               <View style={styles.buttonGroup}>
                 <TouchableOpacity style={styles.button}>

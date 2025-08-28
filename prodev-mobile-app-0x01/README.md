@@ -53,7 +53,7 @@ Styling in React Native is achieved using **JavaScript objects** (via `StyleShee
 5. **Added Additional Text Components**
 
    ```tsx
-   <View>
+   <View style={styles.container}>
      <Text style={styles.largeText}>
        Typescript is great if you practice more
      </Text>
